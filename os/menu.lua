@@ -4,6 +4,7 @@ local ui = require("/os/ui")
 ui.HeaderInfo = {
     [1] = "CloudOS",
     [2] = "Computer ID: " .. os.getComputerID(),
+    [3] = "Computer Label: " .. (os.computerLabel() or "NONE"),
 }
 ui.Title = "Start Menu"
 ui.StartOption = 1
